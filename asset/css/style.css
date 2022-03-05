@@ -1,5 +1,11 @@
+section{
+  margin-top: 25px;
+    min-height: 100vh;
+}
+
 body {
-    background: url(https://images.pexels.com/photos/414102/pexels-photo-414102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-color: rgb(245, 178, 178);
+    /* background-image: url(https://preview.colorlib.com/theme/kayelux/images/image_7.jpg); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -45,6 +51,7 @@ body {
 .nav li:hover:after {
     transform: scaleX(1);
 }
+
 
 .para {
     min-height: 500px;
@@ -141,3 +148,49 @@ body::-webkit-scrollbar-thumb {
       max-width: 100%;
     }
   }
+
+  /* future service */
+
+  .future_service{
+    margin-top: 25px;
+    min-height: 100vh;
+    background-color:  #ffe6ff;
+  }
+  .row row-col-3{
+    margin: 50px;
+    padding: auto;
+    
+  }
+  
+
+
+
+/* Price css */
+.pricing{
+  margin-top: 10rem;
+  min-height: 100vh;
+}
+.price{
+ 
+ border: 2px solid rgb(241, 178, 178);
+}
+.price:hover{
+  background-color: bisque;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+
+/* Make An Appointment */
+.Make_An_Appointment{
+  margin: 10px;
+    min-height: 100vh;
+}
+/* Our Blog */
+.Blog{
+  margin: 10px;
+    min-height: 100vh;
+}
+
+/* Our Expert Makeup & Beautician Artist */
+
+/* icon font color=#8c8c8c */
