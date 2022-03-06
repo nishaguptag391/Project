@@ -1,0 +1,41 @@
+
+  /* Intro section */
+  .intro_section{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+  }
+  .intro{
+    position: absolute;
+    top: 250px;
+    left: 750px;
+    text-align: center;
+    font-size: 50px;
+    /* font-family: 'Cookie', cursive; */
+    font-family: 'Crete Round', serif;
+    text-shadow: #fff;
+  }
+  .intro_p{
+    position: absolute;
+    top: 350px;
+    left: 650px;
+    font-weight: bold;
+    font-size: 19px;
+  }
+.par{
+ margin-top: 15px;
+ font-size: 20px;
+ font-family: 'Crete Round', serif;
+}
+@media screen and (max-width:500px) {
+  .intro{
+    top: 350px;
+    left:0px;
+  }
+}
+@media screen and (max-width:912px) {
+  .intro{
+    top: 450px;
+    left: 0px;
+  }
+}

@@ -1,3 +1,6 @@
+<?php
+include "navbar.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,130 +9,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beauty Care | Home</title>
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Estonia&family=Zen+Antique+Soft&display=swap');
 
-    .banner-image {
-      background-image: url('/images/R_D_based_beauty_products_1024x1024.jpg');
-      background-size: cover;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: 'Zen Antique Soft', serif;
-    }
-
-    .bg-orange {
-      background-color: rgb(247, 144, 107);
-      color: rgb(8, 8, 8);
-    }
-
-    .opaque-navbar {
-      background-color: rgba(0, 0, 0, 0.062);
-      /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-      height: 60px;
-      border-bottom: 0px;
-      transition: background-color .5s ease 0s;
-    }
-
-    .opaque-navbar.opaque {
-      background-color: black;
-      height: 60px;
-      transition: background-color .5s ease 0s;
-    }
-
-    @media (max-width: 992px) {
-      body {
-        background: rgb(235, 9, 9);
-      }
-
-      .opaque-navbar {
-        background-color: rgb(0, 0, 0);
-        height: 60px;
-        transition: background-color .5s ease 0s;
-      }
-
-      /* .navbar-dark .navbar-nav{
-      background-color: antiquewhite;
-      padding: -10px;
-      margin: 0px -17px;
-     padding: -10px;
-    } */
-
-    }
-
-    .navbar-nav {
-      color: rgb(5, 5, 5);
-    }
-  </style>
-  <link rel="stylesheet" href="./asset/css/style.css">
+ 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-
+<link rel="stylesheet" href="./asset/css/intro.css">
 </head>
 
 <body>
   <!-- Navbar  -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
-    <a class="navbar-brand" href="#">
-      <img src="/images/Logo.jpeg" width="40" height="40" alt="">Beauty Website
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-
-      </ul>
-    </div>
-  </nav>
+ 
 
   <!-- Banner Image  -->
-  <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+<section class="main">
+
+
+  <div class="banner-image intro_section">
     <div class="conatiner">
-      <div class="row">
-        <div class=" offset-md-7 col-md-5">
-          <h1>Web design & <br><span>development</span><br>course</h1>
+      <!-- <div class="row">
+        <div class=" offset-md-6 col-md-5">
+          <h1 class="intro my-5">Web design & <br><span class="intro">development</span><br>course</h1>
           <p class="par">A small river named Duden flows by their place and supplies it with the necessary regelialia.
           </p>
 
-          <!-- <p class="text-center">Spa & Beauty Center</p>
+          <p class="text-center">Spa & Beauty Center</p>
           <h1 class="text-center">Beauty & Spa Wellness</h1>
             <p style="font-size: 15px;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            <a href="#">make a appointment</a> -->
-        </div>;
+            <a href="#">make a appointment</a>
+        </div>
 
+      </div> -->
+      <div class="content">
+        <h1 class="intro">Beauty &
+          Spa Wellness
+        </h1>
+        <!-- <p class="intro_p">A small river named Duden flows by their place and supplies it with the necessary regelialia. -->
+        </p>
       </div>
-
     </div>
   </div>
-
+</section>
   <!-- Main Content Area -->
-  <div style="background-color: #ecd8d2;">
 
-    <!-- 2ns section page -->
-    <section class="conatiner">
+
+  <!-- 2ns section page -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+       <div class="col-md-6">
+         <!-- <img src="http://st.depositphotos.com/1031062/2490/i/450/depositphotos_24906151-Pink-spa.jpg" alt="" srcset=" " width="50px" class="img-fluid"> -->
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- <section class="conatiner">
       <div class="row">
         <div class="col-md-6 my-5 mx-5">
           <img src="http://st.depositphotos.com/1031062/2490/i/450/depositphotos_24906151-Pink-spa.jpg" alt=""
@@ -149,10 +82,10 @@
           <button class="btn btn-outline-danger">MAKE AN APPOINTMENT</button>
         </div>
 
-    </section>
-    <!-- 3rd section -->
+    </section> -->
+  <!-- 3rd section -->
 
-    <section class="container" style="width: 100%;">
+  <!-- <section class="container" style="width: 100%;">
       <h6 style="text-align: center;">Browse Our Categories</h6>
       <h1 style="text-align: center;">Our Beauty & Spa Services</h1><br><br><br>
       <div class="row row-cols-4" style="text-align: center;">
@@ -210,20 +143,10 @@
       </div><br><br>
     </section>
 
-  </div>
+  </div> -->
   <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-  <script>
-    var nav = document.querySelector('nav');
-    window.addEventListener('scroll', function () {
-      if (window.pageYOffset > 100)  //height in pixels when the navbar becomes non opaque/
-      {
-        nav.classList.add('bg-orange', 'shadow');
-      } else {
-        nav.classList.remove('bg-orange', 'shadow');
-      }
-    });
-  </script>
-  <section class="future_service">
+ 
+  <!-- <section class="future_service">
     <div style="text-align: center;">
       <h6 style="text-align: center;">Kayelux Beauty Salon</h6>
       <h1 style="text-align: center;">Featured Services</h1>
@@ -264,11 +187,11 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Our Expert Makeup & Beautician Artist -->
 
-  <section>
+  <!-- <section>
     <div class="container">
       <h6>Meet Our Makeup Artist</h6>
       <h2>Our Expert Makeup & Beautician Artist</h2>
@@ -359,10 +282,10 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- Make An Appointment -->
-  <section class="Make_An_Appointment">
+  <!-- <section class="Make_An_Appointment">
     <div class="row row-col-2">
       <div class="col">
         <h6 style="text-align: center;">BEAUTY APPOINTMENT</h6>
@@ -376,6 +299,7 @@
           <input type="text" placeholder="Beauty Message" class="form-control" id="select_message" name="selectsubject"><br><br>
           <label for="msg">MESSAGE</label><br>
           <input type="text" placeholder="Message..." class="form-control" id="message" name="message"><br><br>
+          <button class="btn btn-outline-danger">MAKE AN APPOINTMENT</button>
 `        </form>
       </div>
       <div class="col">
@@ -384,11 +308,11 @@
         </div>
       </div>
     </div>
-  </section>
-  
+  </section> -->
+
   <!-- blog section -->
 
-  <section class="blog">
+  <!-- <section class="blog">
     <div>
       <h6 style="text-align: center;">Our Blog</h6>
       <h2 >Recent From Blog</h2>
@@ -426,13 +350,13 @@
 
       </div>
     </div>
-  </section>
+  </section> -->
 
   <!-- last block -->
 
-  <section>
+  <!-- <section>
     
-  </section>
+  </section> -->
 
 
 
@@ -447,15 +371,7 @@
 
 
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
-    crossorigin="anonymous"></script>
+ 
 </body>
 <style>
 
