@@ -70,9 +70,10 @@
   /* future service */
 
   .future_service{
-    margin-top: 25px;
-    min-height: 100vh;
+   
+    min-height: 90vh;
     background-color:  #ffe6ff;
+    padding-bottom: 50px;
   }
  
   
@@ -81,8 +82,8 @@
 
 /* Price css */
 .pricing{
-  margin-top: 10rem;
-  min-height: 100vh;
+  min-height: 90vh;
+
 }
 .price{
  
@@ -100,3 +101,6 @@
 /* Our Expert Makeup & Beautician Artist */
 
 /* icon font color=#8c8c8c */
+footer{
+  background-color: red;
+}
