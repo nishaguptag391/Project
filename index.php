@@ -62,7 +62,7 @@ include "navbar.php";
             paradisematic country, in which roasted parts of sentences fly into your mouth.
           </p>
           <button class="btn btn-outline-primary my-2">OUR SERVICES</button>
-          <button class="btn btn-outline-danger">MAKE AN APPOINTMENT</button>
+          <button class="btn btn-outline-danger" > <a href="appointment.php">MAKE AN APPOINTMENT</a></button>
         </div>
       </div>
     </div>
@@ -196,7 +196,7 @@ include "navbar.php";
           <div class="col-md-12 text-center">
             <div class="pt-2">
               <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
+              <h6 class="subtitle mb-3">BEAUTICIAN</h6>
               <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
@@ -215,12 +215,12 @@ include "navbar.php";
         <!-- Row -->
         <div class="row">
           <div class="col-md-12">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+            <img src="./images/nisha.jpeg" alt="wrapkit" class="img-fluid rounded-circle" />
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
-              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
+              <h5 class="mt-4 font-weight-medium mb-0">Nisha Gupta</h5>
+              <h6 class="subtitle mb-3">BEAUTICIAN</h6>
               <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
@@ -244,7 +244,7 @@ include "navbar.php";
           <div class="col-md-12 text-center">
             <div class="pt-2">
               <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
+              <h6 class="subtitle mb-3">BEAUTICIAN</h6>
               <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
@@ -263,12 +263,12 @@ include "navbar.php";
         <!-- Row -->
         <div class="row">
           <div class="col-md-12">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+            <img src="./images/pooja.jpeg" alt="wrapkit" class="img-fluid rounded-circle" />
           </div>
           <div class="col-md-12 text-center">
             <div class="pt-2">
-              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
+              <h5 class="mt-4 font-weight-medium mb-0">Pooja Epili</h5>
+              <h6 class="subtitle mb-3">BEAUTICIAN</h6>
               <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
               <ul class="list-inline">
                 <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
@@ -309,7 +309,7 @@ include "navbar.php";
           <p class="card-text">&#8594; Spa Package </p>
           <p class="card-text">&#8594; Manicure </p>
           <p class="card-text">&#8594; Pedicure </p>
-          <p class="card-text">&#8594; Couple Massage </p>
+          <p classs="card-text">&#8594; Couple Massage </p>
           <p class="card-text">&#8594; Facial </p>
           <button class="btn btn-outline-primary">GET STARTED</button>
         </div>
@@ -338,52 +338,38 @@ include "navbar.php";
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <label for="inputEmail4">Your Full Name</label>
+              <input type="text" class="form-control" id="inputyourfullname" placeholder="Your Full Name...">
             </div>
             <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
+              <label for="inputEmail4">Email Address</label>
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <label for="inputState">Select subjecct</label>
+            <select id="inputSelectSubject" class="form-control"  >
+              <option selected>Subjects</option>
+              <option>Makeup & Massage</option>
+              <option >Spa Package</option>
+              <option>Manicure</option>
+              <option>Pedicure</option>
+              <option>Couple Massage</option>
+              <option>Facial</option>
+            </select>
           </div>
           <div class="form-group">
-            <label for="inputAddress2">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            <label for="inputMessage">Message</label>
+            <input type="text" class="form-control" id="inputMessage" placeholder="Message">
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
-              </select>
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip">
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          
+            
+          
+          <button type="submit" class="btn btn-outline-danger" >Make An Appointment</button>
         </form>
       </div>
       <div class="col-md-6">
-        <img src="./images/responsive.jpeg" alt="" srcset="" class="img-fluid">
+        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="width:100%" alt="" srcset="" class="img-fluid">
       </div>
     </div>
   </section>
@@ -399,7 +385,7 @@ include "navbar.php";
         <div class="card">
           <img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
+            <p >ADMIN MAR. 31, 2021 3 COMMENTS</p>
             <h5 class="card-title">A small river named Duden flows by their place.</p>
           </div>
         </div>

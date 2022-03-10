@@ -1,50 +1,50 @@
-<?php
+<!-- <?php
 include "navbar.php";
 ?>
 <?php
-$servername="localhost";
-$user="root";
-$password="";
-$database="contact_page";
+// $servername="localhost";
+// $user="root";
+// $password="";
+// $database="contact_page";
 
-//connection set
-$conn=mysqli_connect($servername,$user,$password,$database);
-if($conn){
+// //connection set
+// $conn=mysqli_connect($servername,$user,$password,$database);
+// if($conn){
 
-}
-else{
-    die("connection failed:" .mysqli_connect_error());
-}
-?>
+// }
+// else{
+//     die("connection failed:" .mysqli_connect_error());
+// }
+// ?>
 
- <?php
-if(isset($_post['submit'])){
-    $fullname=$_POST['fullname'];
-    $email=$_POST['email'];
-    $selectsubject=$_POST['selectsubject'];
-    $message=$_POST['message'];
-    $sql="INSERT INTO `user`(`full_name`, `email`, `select_message`, `message`)values ('$fullname', '$email', '$selectmessage', $message)";
-    $result=mysqli_query($conn, $sql);
-    if($result){
-        echo "new record created successfully";
-    } else{
-        echo "error:" . $sql."</br>" .mysql_error($conn);
-    }
-}
-?>
-<?php
-$servername="localhost";
-$user="root";
-$password="";
-$database="form";
+//  <?php
+// if(isset($_post['submit'])){
+//     $fullname=$_POST['fullname'];
+//     $email=$_POST['email'];
+//     $selectsubject=$_POST['selectsubject'];
+//     $message=$_POST['message'];
+//     $sql="INSERT INTO `user`(`full_name`, `email`, `select_message`, `message`)values ('$fullname', '$email', '$selectmessage', $message)";
+//     $result=mysqli_query($conn, $sql);
+//     if($result){
+//         echo "new record created successfully";
+//     } else{
+//         echo "error:" . $sql."</br>" .mysql_error($conn);
+//     }
+// }
+// ?>
+// <?php
+// $servername="localhost";
+// $user="root";
+// $password="";
+// $database="form";
 
- $conn=mysqli_connect($servername,$user,$password,$database);
-if($conn){
+//  $conn=mysqli_connect($servername,$user,$password,$database);
+// if($conn){
  
-}else{
-    die("Connection failed:" .mysqli_connect_error());
-}
-?>
+// }else{
+//     die("Connection failed:" .mysqli_connect_error());
+// }
+// ?> -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,58 +61,54 @@ if($conn){
 </head>
 <body>
 <section class="Make_An_Appointment container" >
-  <h1 class="text-center"style="margin-top: 80px;">Make An Appointment</h1>
-  <div class="row">
-    <div class="col-md-6">
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+  <div class="col-lg-7">
+    <div class="contact-wrap w-100 p-md-5 p-4">
+      <h3>Contact Us</h3>
+      <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+      
+
+      
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <div class="dbox w-100 d-flex align-items-start">
+              <div class="text">
+                <p><span>Address:</span><BR>
+                  "198 West 21th Street, Suite 721, navi mumbai 400703.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
+          <div class="col md-4">
+            <div class="dbox w-100 d-flex align-items-start">
+              <div class="text">
+                <p><span>Email:</span>
+                  <a href="milto:info@yoursite.com">info@yoursite.com</a>
+                </p>
+              </div>
+            </div>
+        </div>
+        <div class="col md-4">
+          <div class="dbox w-100 d-flex align-items-start">
+            <div class="text">
+              <p><span>phone:</span>
+                <a href="tel://9876543219">+91 9876543219</a>
+              </p>
+            </div>
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
+        <div>
+
+
     </div>
-    <div class="col-md-6">
-      <img src="./images/responsive.jpeg" alt="" srcset="" class="img-fluid">
+    </div>
+
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+        </form>
+      </div>
+      <div class="row col-md-4">
+        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="width:100%" alt="" srcset="" class="img-fluid">
+      </div>
     </div>
   </div>
 </section>
