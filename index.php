@@ -62,7 +62,7 @@ include "navbar.php";
             paradisematic country, in which roasted parts of sentences fly into your mouth.
           </p>
           <button class="btn btn-outline-primary my-2">OUR SERVICES</button>
-          <button class="btn btn-outline-danger">MAKE AN APPOINTMENT</button>
+          <button class="btn btn-outline-danger" > <a href="appointment.php">MAKE AN APPOINTMENT</a></button>
         </div>
       </div>
     </div>
@@ -339,16 +339,16 @@ include "navbar.php";
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Your Full Name</label>
-              <input type="text" class="form-control" id="inputyourfullname">
+              <input type="text" class="form-control" id="inputyourfullname" placeholder="Your Full Name...">
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail4">Email Address</label>
-              <input type="email" class="form-control" id="inputEmail4">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
             <label for="inputState">Select subjecct</label>
-            <select id="inputSelectSubject" class="form-control">
+            <select id="inputSelectSubject" class="form-control"  >
               <option selected>Subjects</option>
               <option>Makeup & Massage</option>
               <option >Spa Package</option>
@@ -365,11 +365,11 @@ include "navbar.php";
           
             
           
-          <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-outline-danger" >Make An Appointment</button>
         </form>
       </div>
       <div class="col-md-6">
-        <img src="./images/responsive.jpeg" alt="" srcset="" class="img-fluid">
+        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="width:100%" alt="" srcset="" class="img-fluid">
       </div>
     </div>
   </section>
@@ -385,7 +385,7 @@ include "navbar.php";
         <div class="card">
           <img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
+            <p >ADMIN MAR. 31, 2021 3 COMMENTS</p>
             <h5 class="card-title">A small river named Duden flows by their place.</p>
           </div>
         </div>
