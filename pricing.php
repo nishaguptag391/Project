@@ -7,15 +7,15 @@ include "navbar.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bauty | About</title>
+    <title>Bauty | pricing</title>
 </head>
 <body>
-<section class="hero-wrap hero-wrap-2 about_page_head" style="background-image:url(./images/R_D_based_beauty_products_1024x1024.jpg)">
+<section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
 <div class="overlay"></div>
 <div class="container">
 <div class="row no-gutters slider-text align-items-end">
 <div class="col-md-9 mt-5">
-<p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Pricing<i class="fa fa-chevron-right"></i></span></p>
+<p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Pricing <i class="fa fa-chevron-right"></i></span></p>
 <h1 class="mb-5 bread">Pricing</h1>
 </div>
 </div>

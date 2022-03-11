@@ -10,7 +10,7 @@ include "navbar.php";
     <title>Bauty | About</title>
 </head>
 <body>
-<section class="hero-wrap hero-wrap-2 about_page_head" style="background-image:url(./images/R_D_based_beauty_products_1024x1024.jpg); height: 90vh;">
+<section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
 <div class="overlay"></div>
 <div class="container">
 <div class="row no-gutters slider-text align-items-end">
@@ -26,7 +26,7 @@ include "navbar.php";
       <h1 class="text-center py-5">About Beauty</h1>
       <div class="row">
         <div class="col-md-6 px-2">
-          <img src="http://st.depositphotos.com/1031062/2490/i/450/depositphotos_24906151-Pink-spa.jpg" alt=""
+          <img src="http://st.depositphotos.com/1031062/2490/i/450/depositphotos_24906151-Pink-spa.jpg" alt="image"
             srcset=" " class="img-fluid ">
         </div>
         <div class="col-md-6">

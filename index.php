@@ -377,7 +377,7 @@ include "navbar.php";
 
   <!-- blog section -->
 
-   <section class="blog">
+  <section class="blog">
     <div>
       <h4 style="text-align: center;">Our Blog</h4>
       <h2 class="text-center" >Recent From Blog</h2>
@@ -405,15 +405,16 @@ include "navbar.php";
             <h5 class="card-title">A small river named Duden flows by their place.</p>
           </div>
         </div>
-        <div class="card">
+        
+
+      </div>
+      <div class="card">
           <img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
             <h5 class="card-title">A small river named Duden flows by their place.</p>
           </div>
         </div>
-
-      </div>
     </div>
   </section> 
 
