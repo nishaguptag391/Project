@@ -14,6 +14,8 @@ include "navbar.php";
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
     integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="./asset/css/intro.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -27,7 +29,7 @@ include "navbar.php";
     <div class="banner-image intro_section">
       <div class="container">
 
-        <div class="content">
+        <div class="content" data-aos="fade-up" data-aos-duration="3000">
           <h1 class="intro">Beauty &
             Spa Wellness
           </h1>
@@ -75,22 +77,22 @@ include "navbar.php";
       <h1 style="text-align: center;">Our Beauty & Spa Services</h1><br><br><br>
       <div class="row" style="text-align: center;">
         <div class="col-md-3">
-          <img src="./images/design.jpeg" alt="image" height="100px">
+          <img src="./images/design-removebg-preview.png" alt="image" height="100px">
           <h4> Beauty Massage</h4>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+          <p>facial massage can increase circulation for the face.</p>
         </div>
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="image">
           <h4>Facial Therapy</h4>
           <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
         </div>
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="image">
           <h4>Skin Care</h4>
           <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
         </div>
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="image">
           <h4>Parlor & Beauty</h4>
           <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
         </div>
@@ -98,25 +100,25 @@ include "navbar.php";
 
       <div class="row" style="text-align: center;">
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="image">
           <h4>Eye Shadow</h4>
           <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
         </div>
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="image">
           <h4>Relaxation Room</h4>
           <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
         </div>
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="Image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="Image">
           <h4>MakeUp</h4>
           <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
         </div>
         <div class="col-md-3">
-          <img src="./images/design.jpeg" height="100px" alt="image">
+          <img src="./images/design-removebg-preview.png" height="100px" alt="image">
           <h4>Aroma Therapy
             Far far away</h4>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
+          <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>48
         </div>
       </div>
       <br><br>
@@ -331,25 +333,59 @@ include "navbar.php";
   </section>
 
   <!-- Make An Appointment -->
+  <?php
+if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
+  if(empty($_POST['name']) || empty($_POST['type']) || empty($_POST['time']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      http_response_code(500);
+      exit();
+      // headers("Location: index.php");
+      }
+      $name = strip_tags(htmlspecialchars($_POST['name']));
+      $email = strip_tags(htmlspecialchars($_POST['email']));
+      $subject = strip_tags(htmlspecialchars($_POST['type']));
+      $message = strip_tags(htmlspecialchars($_POST['time']));
+      
+      $headers = "From: glalita663@gmail.com";
+      $headers.="MIME-VERSION: Beauty_Care"."\r\n";
+      $headers.="Content-type:text/html;charset=UTF-8"."\r\n";
+      $headers.= "Cc: glalita663@gmail.com";
+      $body="Hey $name "."\r\n\r\n"." This is to appointment mail that you have made from our Beauty Care Website for .\r\n"." .$subject \r\n\r\n .at :$message \n\n \n\n Thank you for your paitence and time";
+      //alert($email);
+      
+      if(mail($email,"Appointment Mail", $body, $headers)){
+          echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Thank you!</strong> for making an appointment with us!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>';
+        // header("Location: thankyou.html");
+      //   RedirectWithMessage('We will contact you', "index.php");
+      }else{
+          echo $email.$headers;
+          echo"fail";
+          // alert("email sending failed please check your email id");
+          http_response_code(500);
+      }
+}
+?>
   <section class="Make_An_Appointment container" >
     <h1 class="text-center"style="margin-top: 80px;">Make An Appointment</h1>
     <div class="row">
       <div class="col-md-6">
-        <form>
+        <form method="post" action="index.php">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputEmail4">Your Full Name</label>
-              <input type="text" class="form-control" id="inputyourfullname" placeholder="Your Full Name...">
+              <input type="text" class="form-control" id="inputyourfullname" name="name" placeholder="Your Full Name...">
             </div>
             <div class="form-group col-md-6">
               <label for="inputEmail4">Email Address</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
             </div>
           </div>
           <div class="form-group">
-            <label for="inputState">Select subjecct</label>
-            <select id="inputSelectSubject" class="form-control"  >
-              <option selected>Subjects</option>
+            <label for="inputState"> Select Service</label>
+            <select id="inputSelectSubject" class="form-control" name="type" >
+              <option selected>Service Type</option>
               <option>Makeup & Massage</option>
               <option >Spa Package</option>
               <option>Manicure</option>
@@ -359,13 +395,21 @@ include "navbar.php";
             </select>
           </div>
           <div class="form-group">
-            <label for="inputMessage">Message</label>
-            <input type="text" class="form-control" id="inputMessage" placeholder="Message">
+            <label for="inputMessage">Select Timing</label>
+            <select id="inputSelectSubject" class="form-control" name="time" >
+              <option selected>Timing Slot</option>
+              <option>10am</option>
+              <option >11am</option>
+              <option>12pm</option>
+              <option>1pm</option>
+              <option>2pm</option>
+              <option>3pm</option>
+            </select>
           </div>
           
             
           
-          <button type="submit" class="btn btn-outline-danger" >Make An Appointment</button>
+          <button type="submit" class="btn btn-outline-danger" name="submit" >Make An Appointment</button>
         </form>
       </div>
       <div class="col-md-6">
@@ -377,7 +421,8 @@ include "navbar.php";
 
   <!-- blog section -->
 
-  <section class="blog">
+</section>
+<section class="blog">
     <div>
       <h4 style="text-align: center;">Our Blog</h4>
       <h2 class="text-center" >Recent From Blog</h2>
@@ -405,19 +450,17 @@ include "navbar.php";
             <h5 class="card-title">A small river named Duden flows by their place.</p>
           </div>
         </div>
-        
-
-      </div>
-      <div class="card">
+        <div class="card">
           <img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
             <h5 class="card-title">A small river named Duden flows by their place.</p>
           </div>
         </div>
+
+      </div>
     </div>
   </section> 
-
   <!-- last block -->
 
   <!-- <section>
@@ -431,7 +474,9 @@ include "navbar.php";
 include "footer.php";
 ?>
 
-
+<script>
+  AOS.init();
+</script>
 
 
 
@@ -442,8 +487,6 @@ include "footer.php";
 
 
 </body>
-<style>
 
-</style>
 
 </html>

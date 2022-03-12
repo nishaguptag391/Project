@@ -5,7 +5,11 @@
 .banner-image {
   background-image: url('../../images/R_D_based_beauty_products_1024x1024.jpg');
   background-size: cover;
+  background-attachment: fixed;
  /* background-position: fixed; */
+}
+.main{
+  background-attachment: fixed;
 }
 
 * {
@@ -120,13 +124,37 @@
   transition: all ease-in-out 0.3s;
 }
 
-/* Make An Appointment */
+/* blog css */
+.blog{
+background-color: #ffe6e6;
 
+}
+
+
+/* serbices */
+
+.icons a{
+  text-decoration: none;
+  color: white;
+}
+
+.icon ion-icon{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 5px;
+  transition: 0.3s ease;
+}
+
+.icon ion-icon:hover{
+  color: #e67213;
+}
 
 /* Our Expert Makeup & Beautician Artist */
 
 /* icon font color=#8c8c8c */
 footer{
-  background-color: red;
+  background-color: rgb(245, 163, 163);
+  
 }
 

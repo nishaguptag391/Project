@@ -12,9 +12,18 @@ include "navbar.php";
 </head>
 <body>
 <section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
+<div class="overlay"></div>
+<div class="container">
+<div class="row no-gutters slider-text align-items-end">
+<div class="col-md-9 mt-5">
+<p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Blog<i class="fa fa-chevron-right"></i></span></p>
+<h1 class="mb-5 bread">Blog</h1>
+</div>
+</div>
+</div>
 </section>
 <section class="blog">
-    <div>
+    <div >
       <h4 style="text-align: center;">Our Blog</h4>
       <h2 class="text-center" >Recent From Blog</h2>
       <div class="card-group">
