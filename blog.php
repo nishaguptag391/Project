@@ -23,44 +23,52 @@ include "navbar.php";
 </div>
 </section>
 <section class="blog">
-    <div >
+    <div>
       <h4 style="text-align: center;">Our Blog</h4>
-      <h2 class="text-center" >Recent From Blog</h2>
+      <h2 class="text-center">Recent From Blog</h2>
       <div class="card-group">
         <div class="card">
-          <img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p >ADMIN MAR. 31, 2021 3 COMMENTS</p>
-            <h5 class="card-title">A small river named Duden flows by their place.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://static.toiimg.com/photo/msid-72368849/72368849.jpg?793304" class="card-img-top" alt="image">
+          <a href="https://makeupandbeauty.com/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
-            <h5 class="card-title">A small river named Duden flows by their place.</p>
+            <h5 class="card-title text-muted">A facial scrub is basically a cream-based product that has some exfoliating
+              ingredients present in it that prevent your skin from damage</p>
           </div>
         </div>
         <div class="card">
-          <img
+          <a href="https://www.buywow.in/blogs/skin-science"><img src="https://static.toiimg.com/photo/msid-72368849/72368849.jpg?793304" class="card-img-top" alt="image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
+          <div class="card-body">
+            <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
+            <h5 class="card-title text-muted">The Beautyblender is a versatile makeup sponge that can be used for practically
+              anything in your makeup bag.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a href="https://candycrow.com/"><img
             src="https://img.freepik.com/free-photo/young-beautiful-woman-with-flowers-near-face_186202-5624.jpg?size=626&ext=jpg"
-            class="card-img-top" alt="...">
+            class="card-img-top" alt="..." data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"></a>
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
-            <h5 class="card-title">A small river named Duden flows by their place.</p>
+            <h5 class="card-title text-muted">Makeup artists are beauty practitioners who offer general makeup services or work in
+              prosthetic design.</h5></p>
           </div>
         </div>
         <div class="card">
-          <img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="...">
+          <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <a href="https://www.beautyandfashionfreaks.com/category/beauty/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="..."></a>
+          </div>
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
-            <h5 class="card-title">A small river named Duden flows by their place.</p>
+            <h5 class="card-title text-muted">Nail art is a creative way to paint, decorate, enhance, and embellish nails. It is a
+              type of artwork that can be done on fingernails</p>
           </div>
         </div>
 
       </div>
     </div>
-  </section> 
+  </section>
+  
 </body>
 <?php
 include "footer.php";

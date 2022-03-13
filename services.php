@@ -8,11 +8,12 @@ include "navbar.php";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bauty | About</title>
+    <title>Bauty | Services</title>
+    <link rel="stylesheet" href="./asset/css/intro.css">
 </head>
 
 <body>
-<section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 539px;">
+<section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
 <div class="overlay"></div>
 <div class="container">
 <div class="row no-gutters slider-text align-items-end">
@@ -23,110 +24,49 @@ include "navbar.php";
 </div>
 </div>
 </section>
-    <section class="services">
-        <div class="container  mt-123" style="width: 100%;">
-            
-            <div class="row" style="text-align: center;">
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" alt="image" height="100px">
-                    <h4> Beauty Massage</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="image">
-                    <h4>Facial Therapy</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="image">
-                    <h4>Skin Care</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="image">
-                    <h4>Parlor & Beauty</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-            </div><br><br><br>
-
-            <div class="row" style="text-align: center;">
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="image">
-                    <h4>Eye Shadow</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="image">
-                    <h4>Relaxation Room</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="Image">
-                    <h4>MakeUp</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-                <div class="col-md-3">
-                    <img src="./images/design.jpeg" height="100px" alt="image">
-                    <h4>Aroma Therapy
-                        Far far away</h4>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia.</p>
-                </div>
-            </div>
-            <br><br>
-            <div style="text-align: center;">
-                <h4>Discover the Best Beauty Salon Center</h4><br>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind
-                    texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <button class="btn btn-primary py-3 px-4">MAKE AN APPOINTMENT</button>
-            </div><br><br>
+<section class="future_service">
+    <div style="text-align: center;">
+      <h6 style="text-align: center;" class="pt-5">Kayelux Beauty Salon</h6>
+      <h1 style="text-align: center;" class="pb-5">Featured Services</h1>
+      <div class="container">
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
+          <div class="col-md-4 featured">
+            <h3>Massage</h3>
+            <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
+            <p>The purpose of massage is generally for the treatment of body stress or pain.</p>
+          </div>
+          <div class="col-md-4 featured">
+            <h3>Tea Therapy</h3>
+            <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
+            <p>Tea Therapy is Natural Remedies Using Traditional Chinese Medicine.</p>
+          </div>
+          <div class="col-md-4 featured">
+            <h3>Hand & Foot Spa</h3>
+            <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
+            <p>Hand and foot massage is a way of helping someone to relax and feel better.</p>
+          </div>
         </div>
-    </section>
-
-    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-
-    <section class="future_service">
-        <div style="text-align: center;">
-            <h6 style="text-align: center;" class="pt-5">Kayelux Beauty Salon</h6>
-            <h1 style="text-align: center;" class="pb-5">Featured Services</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 featured">
-                        <h3>Massage</h3>
-                        <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
-                    </div>
-                    <div class="col-md-4 featured">
-                        <h3>Tea Therapy</h3>
-                        <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
-                    </div>
-                    <div class="col-md-4 featured">
-                        <h3>Hand & Foot Spa</h3>
-                        <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4 featured">
-                        <h3>Body Treatments</h3>
-                        <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
-                    </div>
-                    <div class="col-md-4 featured">
-                        <h3>Facials</h3>
-                        <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
-                    </div>
-                    <div class="col-md-4 featured">
-                        <h3>Waxing</h3>
-                        <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
-                        <p>Far far away, behind the word mountains, far from the countries.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="3000">
+          <div class="col-md-4 featured">
+            <h3>Body Treatments</h3>
+            <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
+            <p>Body treatmentsis stimulate the skin to feel fresh and smooth.</p>
+          </div>
+          <div class="col-md-4 featured">
+            <h3>Facials</h3>
+            <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
+            <p>facial is a set of skin care treatments for your face with the goal of removing impurities, and dead
+              skin.</p>
+          </div>
+          <div class="col-md-4 featured">
+            <h3>Waxing</h3>
+            <img src="./images/design.jpeg" alt="image" class="img-fluid rounded-circle" width="150px">
+            <p>Waxing is the process of hair removal by using a covering of a sticky substance.</p>
+          </div>
         </div>
-    </section>
-
+      </div>
+    </div>
+  </section>
 
 </body>
 

@@ -23,10 +23,14 @@ include "navbar.php";
 </section>
 
 <section class="pricing">
-    
+    <h6 class="text-center">Our Pricing</h6>
+    <h2 class="text-center mb-5">Get Our Package Pricing</h2>
     <div class="card-group container">
-      <div class="card mx-5 my-5 ">
-        <div class="card-body price">
+      <div class="card mx-5 my-5">
+        <div class="card-body price" data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="3000">
           <h5 class="card-title">Basic Plan</h5>
           <h4>&#8377;3,699/mos</h4>
           <p class="card-text">&#8594; Makeup & Massage </p>
@@ -35,24 +39,27 @@ include "navbar.php";
           <p class="card-text">&#8594; Pedicure </p>
           <p class="card-text">&#8594; Couple Massage </p>
           <p class="card-text">&#8594; Facial </p>
-          <button class="btn btn-outline-primary">GET STARTED</button>
+          <button class="btn btn-outline-primary"> <a href="https://rzp.io/l/Aebvjfo">BUY</a></button>
         </div>
       </div>
       <div class="card mx-5 my-5">
-        <div class="card-body price">
+        <div class="card-body price" >
           <h5 class="card-title">Couple Plan</h5>
           <h4>&#8377;5,929/mos</h4>
           <p class="card-text">&#8594; Makeup & Massage </p>
           <p class="card-text">&#8594; Spa Package </p>
           <p class="card-text">&#8594; Manicure </p>
           <p class="card-text">&#8594; Pedicure </p>
-          <p class="card-text">&#8594; Couple Massage </p>
+          <p classs="card-text">&#8594; Couple Massage </p>
           <p class="card-text">&#8594; Facial </p>
-          <button class="btn btn-outline-primary">GET STARTED</button>
+          <button class="btn btn-outline-primary"> <a href="https://rzp.io/l/CNWkdVejO">BUY </a></button>
         </div>
       </div>
       <div class="card mx-5 my-5">
-        <div class="card-body price">
+        <div class="card-body price" data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="3000">
           <h5 class="card-title">Family Plan</h5>
           <h4>&#8377;7,499/mos</h4>
           <p class="card-text">&#8594; Makeup & Massage </p>
@@ -61,7 +68,7 @@ include "navbar.php";
           <p class="card-text">&#8594; Pedicure </p>
           <p class="card-text">&#8594; Couple Massage </p>
           <p class="card-text">&#8594; Facial </p>
-          <button class="btn btn-outline-primary">GET STARTED</button>
+          <button class="btn btn-outline-primary"><a href="https://rzp.io/l/koJANBjckq">BUY </a></button>
         </div>
       </div>
     </div>
@@ -70,113 +77,84 @@ include "navbar.php";
   <!-- Our Expert Makeup & Beautician Artist -->
 
    
-<div class="py-5 team4">
-  <div class="container">
-    <div class="row justify-content-center mb-4">
-      <div class="col-md-7 text-center">
-        <h3 class="mb-3">Experienced & Professional Team</h3>
-        <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great experience for you without doubt and in no-time</h6>
+  <SECTion >
+  <div class="py-5 team4">
+    <div class="container">
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-7 text-center">
+          <h3 class="mb-3">Experienced & Professional Team</h3>
+          <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great
+            experience for you without doubt and in no-time</h6>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <!-- column  -->
-      <div class="col-lg-3 mb-4">
-        <!-- Row -->
-        <div class="row">
-          <div class="col-md-12">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
-          </div>
-          <div class="col-md-12 text-center">
-            <div class="pt-2">
-              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
-              <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-behance"></i></a></li>
-              </ul>
+      <div class="row">
+        <div class="col-lg-3 mb-4">
+          <div class="row">
+            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="wrapkit"
+                class="img-fluid rounded-circle" />
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="pt-2">
+                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                <p>You can relay on our amazing features list and also our customer services will be great experience.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Row -->
-      </div>
-      <!-- column  -->
-      <!-- column  -->
-      <div class="col-lg-3 mb-4">
-        <!-- Row -->
-        <div class="row">
-          <div class="col-md-12">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
-          </div>
-          <div class="col-md-12 text-center">
-            <div class="pt-2">
-              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
-              <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-behance"></i></a></li>
-              </ul>
+        <div class="col-lg-3 mb-4">
+          <div class="row">
+            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="wrapkit"
+                class="img-fluid rounded-circle" />
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="pt-2">
+                <h5 class="mt-4 font-weight-medium mb-0">Nisha Gupta</h5>
+                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                <p>Specialize in understanding various skin types, makeup applications, hair styling, and hair
+                  colouring.</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Row -->
-      </div>
-      <!-- column  -->
-      <!-- column  -->
-      <div class="col-lg-3 mb-4">
-        <!-- Row -->
-        <div class="row">
-          <div class="col-md-12">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
-          </div>
-          <div class="col-md-12 text-center">
-            <div class="pt-2">
-              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
-              <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-behance"></i></a></li>
-              </ul>
+        <div class="col-lg-3 mb-4">
+          <div class="row">
+            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" alt="wrapkit"
+                class="img-fluid rounded-circle" />
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="pt-2">
+                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                <p>The Beautyblender is a versatile makeup sponge that can be used for practically anything in your
+                  makeup bag.</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Row -->
-      </div>
-      <!-- column  -->
-      <!-- column  -->
-      <div class="col-lg-3 mb-4">
-        <!-- Row -->
-        <div class="row">
-          <div class="col-md-12">
-            <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
-          </div>
-          <div class="col-md-12 text-center">
-            <div class="pt-2">
-              <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-              <h6 class="subtitle mb-3">Property Specialist</h6>
-              <p>You can relay on our amazing features list and also our customer services will be great experience.</p>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-facebook"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-twitter"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-instagram"></i></a></li>
-                <li class="list-inline-item"><a href="#" class="text-decoration-none d-block px-1"><i class="icon-social-behance"></i></a></li>
-              </ul>
+        <div class="col-lg-3 mb-4">
+          <div class="row">
+            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit"
+                class="img-fluid rounded-circle" />
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="pt-2">
+                <h5 class="mt-4 font-weight-medium mb-0">Pooja Epili</h5>
+                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                <p>Expertise in recommending different beauty treatments such as therapies for skin and hair care</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Row -->
       </div>
     </div>
   </div>
-</div>
+</SECTion>
 
 </body>
 </html>

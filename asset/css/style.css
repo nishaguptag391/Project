@@ -92,7 +92,7 @@
   cursor: pointer; /* Add a pointer on hover */
 }
 .mt-123{
-  margin-top: 120px;
+  margin-top: 500px;
 }
 
   /* future service */
@@ -124,9 +124,16 @@
   transition: all ease-in-out 0.3s;
 }
 
+/* appointment */
+
+.appointment_section {
+  min-height: 90vh;
+  background-color: #ffe6e6;
+}
+
 /* blog css */
 .blog{
-background-color: #ffe6e6;
+min-height: 90vh;
 
 }
 

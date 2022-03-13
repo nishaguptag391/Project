@@ -178,8 +178,8 @@ if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
         </div>
       </div>
       <div class="row col-lg-4">
-        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="height:80% ;width: 100%;" alt=""
-          srcset="" class="img-fluid py-5">
+        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="height:80% ;width: 100%; border-radius: 50%; "  alt=""
+          srcset="" class="img-fluid py-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
       </div>
     </div>
   </section>
