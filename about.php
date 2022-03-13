@@ -185,7 +185,7 @@ include "navbar.php";
         <div class="col-lg-3 mb-4">
           <div class="row">
             <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="wrapkit"
+              <img src="./images/nisha.jpeg" height="345px" width="360px"alt="wrapkit"
                 class="img-fluid rounded-circle" />
             </div>
             <div class="col-md-12 text-center">
@@ -217,7 +217,7 @@ include "navbar.php";
         <div class="col-lg-3 mb-4">
           <div class="row">
             <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit"
+              <img src="./images/pooja.jpeg" height="345px" width="360px"alt="wrapkit"
                 class="img-fluid rounded-circle" />
             </div>
             <div class="col-md-12 text-center">

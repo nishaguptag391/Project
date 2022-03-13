@@ -56,7 +56,7 @@ include "navbar.php";
         </div>
         <div class="card">
           <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <a href="https://www.beautyandfashionfreaks.com/category/beauty/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="..."></a>
+            <a href="https://www.beautyandfashionfreaks.com/category/beauty/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="..."height="345px" width="360px"></a>
           </div>
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>

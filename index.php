@@ -209,7 +209,7 @@ include "navbar.php";
         <div class="col-lg-3 mb-4">
           <div class="row">
             <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t2.jpg" alt="wrapkit"
+              <img src="./images/nisha.jpeg" alt="wrapkit"height="345px" width="360px"
                 class="img-fluid rounded-circle" />
             </div>
             <div class="col-md-12 text-center">
@@ -241,7 +241,7 @@ include "navbar.php";
         <div class="col-lg-3 mb-4">
           <div class="row">
             <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t4.jpg" alt="wrapkit"
+              <img src="./images/pooja.jpeg" alt="wrapkit" height="345px" width="360px"
                 class="img-fluid rounded-circle" />
             </div>
             <div class="col-md-12 text-center">
@@ -410,7 +410,7 @@ if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
   <section class="blog" >
     <div>
       <h4 style="text-align: center;">Our Blog</h4>
-      <h2 class="text-center">Recent From Blog</h2>
+      <h2 class="text-center py-5" >Recent From Blog</h2>
       <div class="card-group">
         <div class="card">
           <a href="https://makeupandbeauty.com/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
