@@ -5,26 +5,27 @@ include "navbar.php";
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bauty | Services</title>
-    <link rel="stylesheet" href="./asset/css/intro.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bauty | Services</title>
+  <link rel="stylesheet" href="./asset/css/intro.css">
 </head>
 
 <body>
-<section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
-<div class="overlay"></div>
-<div class="container">
-<div class="row no-gutters slider-text align-items-end">
-<div class="col-md-9 mt-5">
-<p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Services<i class="fa fa-chevron-right"></i></span></p>
-<h1 class="mb-5 bread">Services</h1>
-</div>
-</div>
-</div>
-</section>
-<section class="future_service">
+  <section class="hero-wrap hero-wrap-2 about_page_head" style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
+    <div style="background-color: rgba(243, 213, 213, 0.397); height: 100vh;">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 mt-5">
+            <p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Services<i class="fa fa-chevron-right"></i></span></p>
+            <h1 class="mb-5 bread">Services</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="future_service">
     <div style="text-align: center;">
       <h6 style="text-align: center;" class="pt-5">Kayelux Beauty Salon</h6>
       <h1 style="text-align: center;" class="pb-5">Featured Services</h1>

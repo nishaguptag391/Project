@@ -11,13 +11,17 @@ include "navbar.php";
     <title>Beauty | About</title>
 </head>
 <body>
-<section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
-<div class="overlay"></div>
+    
+    
+    <section class="hero-wrap hero-wrap-2 about_page_head"  style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
+        <div  style="background-color: rgba(243, 213, 213, 0.397); height: 100vh;"> 
+
 <div class="container">
 <div class="row no-gutters slider-text align-items-end">
 <div class="col-md-9 mt-5">
 <p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
 <h1 class="mb-5 bread">About Us</h1>
+</div>
 </div>
 </div>
 </div>

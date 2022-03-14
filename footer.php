@@ -16,7 +16,7 @@
     
 <div>
 
-<footer class="text-white text-center text-lg-start ">
+<footer class="text-black text-center text-lg-start ">
 <!-- Grid container -->
 <div class="container p-4">
   <!--Grid row-->
@@ -53,7 +53,7 @@
     <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
       <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
 
-      <div class="form-outline form-white mb-4">
+      <div class="form-outline form-black mb-4">
         <input type="text" id="formControlLg" class="form-control form-control-lg" />
         <label class="form-label" for="formControlLg">Search</label>
       </div>
@@ -79,7 +79,7 @@
     <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
       <h5 class="text-uppercase mb-4">Opening hours</h5>
 
-      <table class="table text-center text-white">
+      <table class="table text-center text-black">
         <tbody class="font-weight-normal">
           <tr>
             <td>Mon - Thu:</td>
@@ -105,7 +105,7 @@
 <!-- Copyright -->
 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
   © 2021 Copyright:
-  <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  <a class="text-white" href="#">Beauty Care</a>
 </div>
 <!-- Copyright -->
 </footer>

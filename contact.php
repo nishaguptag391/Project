@@ -81,108 +81,114 @@ if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
 <body>
   <section class="hero-wrap hero-wrap-2 about_page_head"
     style="background-image:url(https://preview.colorlib.com/theme/kayelux/images/xbg_2.jpg.pagespeed.ic.k2FHEGn_FG.webp); height: 739px;">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row no-gutters slider-text align-items-end">
-        <div class="col-md-9 mt-5">
-          <p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i
-                  class="fa fa-chevron-right"></i></a></span> <span>Contact Us <i
-                class="fa fa-chevron-right"></i></span></p>
-          <h1 class="mb-5 bread">Contact Us</h1>
+    <div style="background-color: rgba(243, 213, 213, 0.397); height: 100vh;">
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-md-9 mt-5">
+            <p class="breadcrumbs mt-123"><span class="me-2"><a href="index.html">Home <i
+                    class="fa fa-chevron-right"></i></a></span> <span>Contact Us <i
+                  class="fa fa-chevron-right"></i></span></p>
+            <h1 class="mb-5 bread">Contact Us</h1>
+          </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="Make_An_Appointment container">
-    <div class="row">
+  <div style="background-color: rgba(245, 190, 180, 0.822);">
 
 
-      <div class="col-lg-8">
-        <div class="contact-wrap w-100 p-md-5 p-4">
-          <h3>Contact Us</h3>
-          <p class="mb-4">We're open for any suggestion or just to have a chat</p>
-          <div class="row mb-4">
-            <div class="col-md-4">
-              <div class="dbox w-100 d-flex align-items-start">
-                <div class="text">
-                  <p><span>Address:</span><BR>
-                    "198 West 21th Street, Suite 721, navi mumbai 400703.
-                  </p>
+    <section class="Make_An_Appointment container">
+      <div class="row">
+
+
+        <div class="col-lg-8">
+          <div class="contact-wrap w-100 p-md-5 p-4">
+            <h3>Contact Us</h3>
+            <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="text">
+                    <p><span>Address:</span><BR>
+                      "198 West 21th Street, Suite 721, navi mumbai 400703.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="dbox w-100 d-flex align-items-start">
-                <div class="text">
-                  <p><span>Email:</span>
-                    <a href="milto:info@yoursite.com">info@yoursite.com</a>
-                  </p>
+              <div class="col-md-4">
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="text">
+                    <p><span>Email:</span>
+                      <a href="milto:info@yoursite.com">info@yoursite.com</a>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="dbox w-100 d-flex align-items-start">
-                <div class="text">
-                  <p><span>phone:</span>
-                    <a href="tel://9876543219">+91 9876543219</a>
-                  </p>
+              <div class="col-md-4">
+                <div class="dbox w-100 d-flex align-items-start">
+                  <div class="text">
+                    <p><span>phone:</span>
+                      <a href="tel://9876543219">+91 9876543219</a>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <form id="contactForm" name="contactForm" class="contactForm" action="contact.php" method="POST">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="name" id="name" placeholder="name" required>
+              <div>
+                <form id="contactForm" name="contactForm" class="contactForm" action="contact.php" method="POST">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="name" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <input type="email" class="form-control" name="email" id="name" placeholder="email" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="form-group">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="subject"
+                          required>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control" id="message" cols="30" rows="7"
+                          placeholder="create a message here" required></textarea>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-4">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="name" placeholder="email" required>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="subject"
-                        required>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea name="message" class="form-control" id="message" cols="30" rows="7"
-                        placeholder="create a message here" required></textarea>
-                    </div>
-                  </div>
-                </div>
 
-                <button value="Send Message" class="btn btn-primary" name="submit">Submit</button>
-              </form>
-              <div class="w-100 social-media mt-5">
+                  <button value="Send Message" class="btn btn-primary" name="submit">Submit</button>
+                </form>
+                <div class="w-100 social-media mt-5">
 
-                <h3>Follow us here</h3>
-                <div class="icon">
-                  <a href="#">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                  <a href="#">
-                    <ion-icon name="logo-instagram"></ion-icon>
-                  </a>
-                  <a href="#">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
+                  <h3>Follow us here</h3>
+                  <div class="icon">
+                    <a href="#">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="#">
+                      <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="#">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="row col-lg-4">
+          <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg"
+            style="height:80% ;width: 100%; border-radius: 50%; " alt="" srcset="" class="img-fluid py-5"
+            data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        </div>
       </div>
-      <div class="row col-lg-4">
-        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="height:80% ;width: 100%; border-radius: 50%; "  alt=""
-          srcset="" class="img-fluid py-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </body>
 
 <?php
