@@ -28,7 +28,7 @@ include "navbar.php";
   <section class="blog">
     <div>
       <h4 style="text-align: center;">Our Blog</h4>
-      <h2 class="text-center">Recent From Blog</h2>
+      <h2 class="text-center py-3">Recent From Blog</h2>
       <div class="card-group">
         <div class="card">
           <a href="https://makeupandbeauty.com/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
@@ -57,7 +57,7 @@ include "navbar.php";
         </div>
         <div class="card">
           <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-            <a href="https://www.beautyandfashionfreaks.com/category/beauty/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="..." height="345px" width="360px"></a>
+            <a href="https://www.beautyandfashionfreaks.com/category/beauty/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_4.jpg" class="card-img-top" alt="..."></a>
           </div>
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>

@@ -30,18 +30,14 @@ include "navbar.php";
       <div class="container">
 
         <div class="content" data-aos="fade-up" data-aos-duration="3000">
-          <h1 class="intro">Beauty &
-            Spa Wellness
-          </h1>
+          <h1 class="intro">Beauty & Spa Wellness</h1>
           <p class="intro">A small river named Duden flows by their place and supplies it with the necessary regelialia.
-
           </p>
-
+          <br><br><button class="intro btn btn-outline-danger " id="btnnn"> <a href="#appointment">MAKE AN APPOINTMENT</a></button>
         </div>
       </div>
     </div>
   </section>
-  <!-- Main Content Area -->
 
 
   <!-- 2ns section page -->
@@ -126,7 +122,8 @@ include "navbar.php";
         <p>A beauty salon is an establishment that offers a variety of cosmetic treatments and cosmetic services for men
           and women. Beauty salons may offer a variety of services including professional hair cutting and styling,
           manicures and pedicures, and often cosmetics, makeup and makeovers.</p>
-        <button class="btn btn-primary py-3 px-4">MAKE AN APPOINTMENT</button>
+         <button class="btn btn-outline-danger"> <a href="#appointment">MAKE AN APPOINTMENT</a></button>
+
       </div><br><br>
     </div>
   </section>
@@ -410,7 +407,7 @@ if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
   <section class="blog" >
     <div>
       <h4 style="text-align: center;">Our Blog</h4>
-      <h2 class="text-center py-5" >Recent From Blog</h2>
+      <h2 class="text-center py-4" >Recent From Blog</h2>
       <div class="card-group">
         <div class="card">
           <a href="https://makeupandbeauty.com/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
