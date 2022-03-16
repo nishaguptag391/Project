@@ -1,6 +1,42 @@
 <?php
 include "navbar.php";
 ?>
+<?php
+if (($_SERVER['REQUEST_METHOD'] == "POST") && isset($_POST['submit'])) {
+  if (empty($_POST['name']) || empty($_POST['type']) || empty($_POST['time']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+    http_response_code(500);
+    exit();
+    // headers("Location: index.php");
+  }
+  $name = strip_tags(htmlspecialchars($_POST['name']));
+  $email = strip_tags(htmlspecialchars($_POST['email']));
+  $subject = strip_tags(htmlspecialchars($_POST['type']));
+  $message = strip_tags(htmlspecialchars($_POST['time']));
+
+  $headers = "From: glalita663@gmail.com";
+  $headers .= "MIME-VERSION: Beauty_Care" . "\r\n";
+  $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+  $headers .= "Cc: glalita663@gmail.com";
+  $body = "Hey $name " . "\r\n\r\n" . " This is to appointment mail that you have made from our Beauty Care Website for .\r\n" . " .$subject \r\n\r\n .at :$message \n\n \n\n Thank you for your paitence and time";
+  //alert($email);
+
+  if (mail($email, "Appointment Mail", $body, $headers)) {
+    //   echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
+    //   <strong>Thank you!</strong> for making an appointment with us!
+    //   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    // </div>';
+    header("Location: appointment.html");
+    // header("Location: index.php");
+
+    // RedirectWithMessage('We will contact you', "index.php");
+  } else {
+    echo $email . $headers;
+    echo "fail";
+    // alert("email sending failed please check your email id");
+    http_response_code(500);
+  }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +47,7 @@ include "navbar.php";
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="./asset/css/intro.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -33,8 +68,9 @@ include "navbar.php";
           <h1 class="intro">Beauty &
             Spa Wellness
           </h1>
-          <p class="intro">A small river named Duden flows by their place and supplies it with the necessary regelialia.
-
+          <p class="intro">A small river named Duden flows by their place and supplies it with the necessary regelialia. <br>
+            <a href="#appointment" class="btn btn-danger">Appointment</a>
+            
           </p>
 
         </div>
@@ -50,8 +86,7 @@ include "navbar.php";
       <h1 class="text-center py-5">About Beauty</h1>
       <div class="row">
         <div class="col-md-6 px-5" data-aos="fade-right" data-aos-duration="3000">
-          <img src="http://st.depositphotos.com/1031062/2490/i/450/depositphotos_24906151-Pink-spa.jpg" alt=""
-            srcset=" " class="img-fluid ">
+          <img src="http://st.depositphotos.com/1031062/2490/i/450/depositphotos_24906151-Pink-spa.jpg" alt="" srcset=" " class="img-fluid ">
         </div>
         <div class="col-md-6" class="content" data-aos="fade-up" data-aos-duration="3000">
           <h4 class="text-muted">Kayelux Beauty Salon</h4>
@@ -179,84 +214,80 @@ include "navbar.php";
 
   <!-- Our Expert Makeup & Beautician Artist -->
 
-<SECTion style="background-color: #ffe6e6;">
-  <div class="py-5 team4">
-    <div class="container">
-      <div class="row justify-content-center mb-4">
-        <div class="col-md-7 text-center">
-          <h3 class="mb-3">Experienced & Professional Team</h3>
-          <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great
-            experience for you without doubt and in no-time</h6>
+  <SECTion style="background-color: #ffe6e6;">
+    <div class="py-5 team4">
+      <div class="container">
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-7 text-center">
+            <h3 class="mb-3">Experienced & Professional Team</h3>
+            <h6 class="subtitle">You can relay on our amazing features list and also our customer services will be great
+              experience for you without doubt and in no-time</h6>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 mb-4">
-          <div class="row">
-            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="wrapkit"
-                class="img-fluid rounded-circle" />
-            </div>
-            <div class="col-md-12 text-center">
-              <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
-                <p>You can relay on our amazing features list and also our customer services will be great experience.
-                </p>
+        <div class="row">
+          <div class="col-lg-3 mb-4">
+            <div class="row">
+              <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t1.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="pt-2">
+                  <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                  <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                  <p>You can relay on our amazing features list and also our customer services will be great experience.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="row">
-            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="./images/nisha.jpeg" alt="wrapkit"height="345px" width="360px"
-                class="img-fluid rounded-circle" />
-            </div>
-            <div class="col-md-12 text-center">
-              <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Nisha Gupta</h5>
-                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
-                <p>Specialize in understanding various skin types, makeup applications, hair styling, and hair
-                  colouring.</p>
+          <div class="col-lg-3 mb-4">
+            <div class="row">
+              <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="./images/nisha.jpeg" alt="wrapkit" height="345px" width="360px" class="img-fluid rounded-circle" />
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="pt-2">
+                  <h5 class="mt-4 font-weight-medium mb-0">Nisha Gupta</h5>
+                  <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                  <p>Specialize in understanding various skin types, makeup applications, hair styling, and hair
+                    colouring.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="row">
-            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" alt="wrapkit"
-                class="img-fluid rounded-circle" />
-            </div>
-            <div class="col-md-12 text-center">
-              <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
-                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
-                <p>The Beautyblender is a versatile makeup sponge that can be used for practically anything in your
-                  makeup bag.</p>
+          <div class="col-lg-3 mb-4">
+            <div class="row">
+              <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/team/t3.jpg" alt="wrapkit" class="img-fluid rounded-circle" />
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="pt-2">
+                  <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                  <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                  <p>The Beautyblender is a versatile makeup sponge that can be used for practically anything in your
+                    makeup bag.</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 mb-4">
-          <div class="row">
-            <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
-              <img src="./images/pooja.jpeg" alt="wrapkit" height="345px" width="360px"
-                class="img-fluid rounded-circle" />
-            </div>
-            <div class="col-md-12 text-center">
-              <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Pooja Epili</h5>
-                <h6 class="subtitle mb-3">BEAUTICIAN</h6>
-                <p>Expertise in recommending different beauty treatments such as therapies for skin and hair care</p>
+          <div class="col-lg-3 mb-4">
+            <div class="row">
+              <div class="col-md-12" data-aos="zoom-in" data-aos-duration="3000">
+                <img src="./images/pooja.jpeg" alt="wrapkit" height="345px" width="360px" class="img-fluid rounded-circle" />
+              </div>
+              <div class="col-md-12 text-center">
+                <div class="pt-2">
+                  <h5 class="mt-4 font-weight-medium mb-0">Pooja Epili</h5>
+                  <h6 class="subtitle mb-3">BEAUTICIAN</h6>
+                  <p>Expertise in recommending different beauty treatments such as therapies for skin and hair care</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</SECTion>
+  </SECTion>
   <!-- pricing page -->
 
   <section class="pricing">
@@ -264,10 +295,7 @@ include "navbar.php";
     <h2 class="text-center mb-5">Get Our Package Pricing</h2>
     <div class="card-group container">
       <div class="card mx-5 my-5">
-        <div class="card-body price" data-aos="fade-right"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="3000">
+        <div class="card-body price" data-aos="fade-right" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
           <h5 class="card-title">Basic Plan</h5>
           <h4>&#8377;3,699/mos</h4>
           <p class="card-text">&#8594; Makeup & Massage </p>
@@ -280,7 +308,7 @@ include "navbar.php";
         </div>
       </div>
       <div class="card mx-5 my-5">
-        <div class="card-body price" >
+        <div class="card-body price">
           <h5 class="card-title">Couple Plan</h5>
           <h4>&#8377;5,929/mos</h4>
           <p class="card-text">&#8594; Makeup & Massage </p>
@@ -293,10 +321,7 @@ include "navbar.php";
         </div>
       </div>
       <div class="card mx-5 my-5">
-        <div class="card-body price" data-aos="fade-left"
-        data-aos-anchor="#example-anchor"
-        data-aos-offset="500"
-        data-aos-duration="3000">
+        <div class="card-body price" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="3000">
           <h5 class="card-title">Family Plan</h5>
           <h4>&#8377;7,499/mos</h4>
           <p class="card-text">&#8594; Makeup & Massage </p>
@@ -313,104 +338,69 @@ include "navbar.php";
 
   <!-- Make An Appointment -->
   <!-- php -->
-  <?php
-if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
-  if(empty($_POST['name']) || empty($_POST['type']) || empty($_POST['time']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-      http_response_code(500);
-      exit();
-      // headers("Location: index.php");
-      }
-      $name = strip_tags(htmlspecialchars($_POST['name']));
-      $email = strip_tags(htmlspecialchars($_POST['email']));
-      $subject = strip_tags(htmlspecialchars($_POST['type']));
-      $message = strip_tags(htmlspecialchars($_POST['time']));
-      
-      $headers = "From: glalita663@gmail.com";
-      $headers.="MIME-VERSION: Beauty_Care"."\r\n";
-      $headers.="Content-type:text/html;charset=UTF-8"."\r\n";
-      $headers.= "Cc: glalita663@gmail.com";
-      $body="Hey $name "."\r\n\r\n"." This is to appointment mail that you have made from our Beauty Care Website for .\r\n"." .$subject \r\n\r\n .at :$message \n\n \n\n Thank you for your paitence and time";
-      //alert($email);
-      
-      if(mail($email,"Appointment Mail", $body, $headers)){
-          echo'<div class="alert alert-success alert-dismissible fade show" role="alert">
-          <strong>Thank you!</strong> for making an appointment with us!
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>';
-        // header("Location: thankyou.html");
-      //   RedirectWithMessage('We will contact you', "index.php");
-      }else{
-          echo $email.$headers;
-          echo"fail";
-          // alert("email sending failed please check your email id");
-          http_response_code(500);
-      }
-}
-?>
+
   <!-- html -->
   <section class="appointment_section " id="appointment">
     <div class="container">
-    <h1 class="text-center py-5" style="margin-top: 80px;">Make An Appointment</h1>
-    <div class="row">
-      <div class="col-md-6">
-        <form method="post" action="index.php">
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Your Full Name</label>
-              <input type="text" class="form-control" id="inputyourfullname" name="name"
-                placeholder="Your Full Name...">
+      <h1 class="text-center py-5" style="margin-top: 80px;">Make An Appointment</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <form method="post" action="index.php">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Your Full Name</label>
+                <input type="text" class="form-control" id="inputyourfullname" name="name" placeholder="Your Full Name...">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email Address</label>
+                <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
+              </div>
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email Address</label>
-              <input type="email" class="form-control" id="inputEmail4" name="email" placeholder="Email">
+            <div class="form-group">
+              <label for="inputState"> Select Service</label>
+              <select id="inputSelectSubject" class="form-control" name="type">
+                <option selected>Service Type</option>
+                <option>Makeup & Massage</option>
+                <option>Spa Package</option>
+                <option>Manicure</option>
+                <option>Pedicure</option>
+                <option>Couple Massage</option>
+                <option>Facial</option>
+              </select>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="inputState"> Select Service</label>
-            <select id="inputSelectSubject" class="form-control" name="type">
-              <option selected>Service Type</option>
-              <option>Makeup & Massage</option>
-              <option>Spa Package</option>
-              <option>Manicure</option>
-              <option>Pedicure</option>
-              <option>Couple Massage</option>
-              <option>Facial</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="inputMessage">Select Timing</label>
-            <select id="inputSelectSubject" class="form-control" name="time">
-              <option selected>Timing Slot</option>
-              <option>10am</option>
-              <option>11am</option>
-              <option>12pm</option>
-              <option>1pm</option>
-              <option>2pm</option>
-              <option>3pm</option>
-            </select>
-          </div>
+            <div class="form-group">
+              <label for="inputMessage">Select Timing</label>
+              <select id="inputSelectSubject" class="form-control" name="time">
+                <option selected>Timing Slot</option>
+                <option>10am</option>
+                <option>11am</option>
+                <option>12pm</option>
+                <option>1pm</option>
+                <option>2pm</option>
+                <option>3pm</option>
+              </select>
+            </div>
 
 
 
-          <button type="submit" class="btn btn-outline-danger" name="submit">Make An Appointment</button>
-        </form>
+            <a href="https://rzp.io/l/Aebvjfo"> <button type="submit" class="btn btn-outline-danger" name="submit">Make An Appointment</button></a>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="width:100%" alt="" srcset="" class="img-fluid">
+        </div>
       </div>
-      <div class="col-md-6">
-        <img src="https://preview.colorlib.com/theme/kayelux/images/image_8.jpg" style="width:100%" alt="" srcset=""
-          class="img-fluid">
-      </div>
-    </div>
     </div>
   </section>
 
 
   <!-- blog section -->
 
-  
-  <section class="blog" >
+
+  <section class="blog">
     <div>
       <h4 style="text-align: center;">Our Blog</h4>
-      <h2 class="text-center py-5" >Recent From Blog</h2>
+      <h2 class="text-center py-5">Recent From Blog</h2>
       <div class="card-group">
         <div class="card">
           <a href="https://makeupandbeauty.com/"><img src="https://preview.colorlib.com/theme/kayelux/images/image_1.jpg" class="card-img-top" alt="image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
@@ -429,14 +419,12 @@ if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
           </div>
         </div>
         <div class="card">
-          <a href="https://candycrow.com/"><img
-            src="https://img.freepik.com/free-photo/young-beautiful-woman-with-flowers-near-face_186202-5624.jpg?size=626&ext=jpg"
-            class="card-img-top" alt="..." data-aos="flip-left" data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"></a>
+          <a href="https://candycrow.com/"><img src="https://img.freepik.com/free-photo/young-beautiful-woman-with-flowers-near-face_186202-5624.jpg?size=626&ext=jpg" class="card-img-top" alt="..." data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"></a>
           <div class="card-body">
             <p>ADMIN MAR. 31, 2021 3 COMMENTS</p>
             <h5 class="card-title text-muted">Makeup artists are beauty practitioners who offer general makeup services or work in
-              prosthetic design.</h5></p>
+              prosthetic design.</h5>
+            </p>
           </div>
         </div>
         <div class="card">
@@ -453,14 +441,14 @@ if(($_SERVER['REQUEST_METHOD']=="POST")&&isset($_POST['submit'])){
       </div>
     </div>
   </section>
-  
+
 
 
   <!-- End of .container -->
   <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-  <?php 
-include "footer.php";
-?>
+  <?php
+  include "footer.php";
+  ?>
 
   <script>
     AOS.init();
